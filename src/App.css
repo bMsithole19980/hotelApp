@@ -36,30 +36,9 @@
     transform: rotate(360deg);
   }
 }
-.nav-wrapper{
-  
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
 
-}
-.nav-wrapper:hover{
-  opacity: 1;
- 
-}
-.nav-left{
 
-}
-.nav-name{
-  color: white;
-  display: flex;
-  text-align: center;
-  font-size: 30px;
-  
-}
+
 .btn-login{
   background-color: blue;
   color: white;
@@ -122,8 +101,90 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-.back-image{
-  background-image: url('/public/images/hotel.jpg');
-  background-size: cover;
-  background-position: center;
+
+.hotel-img{
+  width: 100%;
+  height: 100vh;
+}
+.nav{
+position: absolute;
+top: 0;
+right: 0;
+display: flex;
+}
+.list{
+margin-top: 10px;
+}
+.list ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.list ul li{
+  margin-right: 10px;
+  color: white;
+  font-size: 25px;
+}
+.list ul li:hover{
+ text-decoration: underline;
+}
+.left-text{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 24px;
+  
+}
+.facilities{
+  text-align: center;
+ 
+}
+
+.facilities h1{
+  text-align: center;
+}
+.facilities-image{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.room-img{
+  width: 100%;
+  height: 100vh;
+
+}
+
+.booking-box{
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+
+}
+.room-book{
+  display: flex;
+  align-items: center;
+}
+.booking-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.room-book h4{
+ margin: 10px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ font-weight: bold;
+ color: black;
+}
+.booking-space{
+  height: 30px;
+
 }

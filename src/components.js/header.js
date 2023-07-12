@@ -1,96 +1,111 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Login from './login';
+import hotel from '../images/hotel.jpg'
+import gym from '../images/The-gym.jpg';
+import pool from '../images/swimmingPool.jpg'
+import spa from '../images/spa.jpg'
+import restaurants from '../images/restaurants.jpg'
+import laundry from '../images/LAUNDRY.jpg'
 function Header() {
-    const [showLogin, setShowLogin]= useState(false);
-    const [showRegister, setShowRegister]= useState(false);
-  const [showLoginForm , setShowLoginForm]= useState(false);
-    const handleLoginClick=()=>{
-        setShowLogin(true);
-        setShowRegister(false);
-        
-    }
-     const handleSignUpCLick=()=>{
-        setShowLogin(false);
-        setShowRegister(true);
-    
-     }
 
-    const [email , setEmail]= useState('');
-    const [password, setPassword]= useState('');
-    const [showPassword ,setShowPAssword]= useState(false);
   
-    const handePasswordToggle=()=>{
-      setShowPAssword(!showPassword);
-    }
-
+  
   return (
-      <div className='back-image'>
+      
+    <div>
+        <table style={{width:"100%" }}>
+            <tr>
+                <td>
+                        <img className='hotel-img'  alt='hotel' src={hotel}></img>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className='nav'>
+                        <div className='list'>
+                            <ul>
+                                <li><Link style={{color:"white"}} >Facilities</Link> </li>
+                                <li><Link style={{color:"white"}} to='/roomReserv'>Rooms</Link> </li>
+                            </ul>
 
-          <div className='container'>
-              <div className='nav-wrapper'>
-                  <div className='nav-left'>
-                      <div className='nav-name'>Luxury Hotels.</div>
-                  </div>
-                  <div className='right'>
-                      <div className='nav-list'>
-                          <ul>
-                              <li ><button onClick={handleLoginClick} className='btn-login'>Login</button></li>
-                          </ul>
-                      </div>
-                  </div>
+                        </div>
 
-              </div>
-              {showLogin && !showRegister && (
-                  <div className='login-popup'>
-                      <form className='form-group' >
-                          <div className='form-content'>
-                              <h2>Login to Exclusive Luxury<br></br> Hotels community</h2>
-                              <input type='text' onChange={(event) => setEmail(event.target.value)} placeholder='Enter your email'></input><br></br>
-                              <div className='password-container'>
-                                  <input type={showPassword ? 'text' : 'password'} onChange={(event) => setPassword(event.target.value)} placeholder='Enter password'></input><br></br>
-                                  <span className='password-toggle' onClick={handePasswordToggle}>
-                                      {showPassword ? <i className='fa fa-eye-slash' style={{ color: "black" }}></i> : <i className='fa fa-eye' style={{ color: "black" }}></i>}
-                                  </span>
-                              </div>
+                    </div>
 
-                              <button>Login</button><br></br>
-                              <Link style={{ color: "lightskyblue" }} >Reset password</Link><br></br>
-                              <h4>No Account ? <Link onClick={handleSignUpCLick}  style={{ color: "lightskyblue" }} >Sign Up</Link></h4>
-                          </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className='left-text'>
+                        <div className='text-name'>
+                            <span style={{fontWeight:"bold" ,fontSize:"35px"}}>WELCOME TO</span><br></br>
+                            <span style={{fontWeight:"bolder" ,fontSize:"80px"}}>LUXURY</span><br></br>
+                            <span style={{fontWeight:"bold" ,fontSize:"30px"}}>HOTELS</span><br></br>
+                            <span style={{fontWeight:"lighter" ,fontSize:"25px"}}>Book your stay and enjoy Luxury<br></br>redifined at the most affordable rates</span>
+                        </div>
 
-                      </form>
+                    </div>
 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className=' facilities'>
+                        <h1>FACILITIES</h1>
+                        <p>We want your stay at our lush hotel to be truly unforgettable. Thats is why we give special attention to all of your nees so<br></br> that we can ensure an experience unique. Luxury hotels offers the perfect setting with stunning views for leisure<br></br> and our modern luxury resort facilities will help you enjoy the best. </p>
+                        <img className='facilities-image' alt='gym' src={gym}></img>
+                        <h1>THE GYM</h1>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className='facilities'>
+                        <img  className='facilities-image' alt='pool' src={pool}></img>
+                        <h1>POOLSIDE BAR</h1>
+                    </div>
 
-                  </div>
-              )}
-              {showRegister && !showLogin && (
-                  <div className='register-popup'>
-                      <form className='form-group'>
-                          <div className='form-content'>
-                              <h2>Create an account to<br></br> Exclusive Luxury Hotels<br></br> community</h2>
-                              <input type='text' placeholder='Enter your email'></input><br></br>
-                              <div className='password-container'>
-                                  <input type={showPassword ? 'text' : 'password'} onChange={(event) => setPassword(event.target.value)} placeholder='Enter password'></input><br></br>
-                                  <span className='password-toggle' onClick={handePasswordToggle}>
-                                      {showPassword ? <i className='fa fa-eye-slash' style={{ color: "black" }}></i> : <i className='fa fa-eye' style={{ color: "black" }}></i>}
-                                  </span>
-                              </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className='facilities'>
+                        <img  className='facilities-image' alt='pool' src={spa}></img>
+                        <h1>THE SPA</h1>
+                    </div>
 
-                              <button>Login</button><br></br>
-                              <h4>Already have an account? <Link    style={{ color: "lightskyblue" }}>Log in</Link></h4>
-                          </div>
-                      </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className='facilities'>
+                        <img  className='facilities-image' alt='pool' src={restaurants}></img>
+                        <h1>RESTAURANT</h1>
+                    </div>
 
-                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div className='facilities'>
+                        <img  className='facilities-image' alt='pool' src={laundry}></img>
+                        <h1>LAUNDRY</h1>
+                    </div>
 
-              )}
+                </td>
+            </tr>
 
-
-          </div>
-      </div>
+        </table>
+         
+         
+   </div>
+        
+   
       
   );
 }
 
 export default Header;
+
