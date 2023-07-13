@@ -38,25 +38,16 @@
 }
 
 
-
-.btn-login{
-  background-color: blue;
-  color: white;
-  border-radius: 5px;
-  border-top: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  
-}
 .form-group{
   background-color: black;
-  padding: 20px;
+  padding: 30px;
   color: white;
   border-radius: 5px;
-  width: 300px;
+  width: 400px;
+  height: 500px;
   margin: 0 auto;
+  border-color: red;
+
 
 }
 .form-group input{
@@ -103,6 +94,10 @@
 }
 
 .hotel-img{
+  width: 100%;
+  height: 100vh;
+}
+.backHotel{
   width: 100%;
   height: 100vh;
 }
@@ -158,14 +153,22 @@ margin-top: 10px;
 }
 
 .booking-box{
-  border: 2px solid white;
-  width: 200px;
-  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 97%;
+  background-color: white;
+  height: 300px;
   display: inline-block;
   position: relative;
   align-items: center;
+  margin-left: 10%;
+  margin-right: auto;
+  border-radius: 25px;
+  transition: 0.3s;
+  left: -60px;
+  right: 20px;
 
 }
+
 .room-book{
   display: flex;
   align-items: center;
@@ -186,5 +189,110 @@ margin-top: 10px;
 }
 .booking-space{
   height: 30px;
+}
+.register-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.booking-details span{ 
+  margin: 10px;
+  position: absolute;
+  top: 70px;
+  left: 425px;
+  font-family: bold;
+  color: black;
+}
+.reserve-room{
+  margin: 5px;
+  position: absolute;
+  top:240px ;
+  left: 425px;
 
+}
+.btn-reserve-room{
+  top: 140px;
+  position: absolute;
+  left: 430px;
+  background-color: chocolate;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+}
+.booking-pic{
+  width: 300px;
+  height: 260px;
+  left: 10px;
+  position: absolute;
+  top: 20px;
+  border-radius: 5px;
+}
+.book-head{
+  position: absolute;
+  top: -2px;
+  left: 340px;
+}
+.book-details h3{
+  font-weight: normal;
+  font-size: 16px;
+  position: absolute;
+  left: 345px;
+  top: 50px;
+}
+.btn-book{
+  position: relative;
+  top: 170px;
+  left: 350px;
+  background-color: chocolate;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: -40px;
+  margin-left: 20px;
+  border-color: chocolate;
+}
+.btn-reserve{
+  position: relative;
+  top: 245px;
+  left: 550px;
+  background-color: rgb(233, 146, 69);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: -40px;
+  margin-left: 20px;
+  border-color: chocolate;
+}
+.features{
+  text-align: right;
+  margin-right: 230px;
+  font-size: 12px;
+  margin-top: 40px;
+
+}
+.ratings{
+  position: absolute;
+  left: 360px;
+  top: 240px;
+  justify-content: space-around;
+}
+
+.rating-stars{
+  display: flex;
+  
+}
+.rating-stars svg{
+  margin-right: 30px;  
 }
