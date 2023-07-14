@@ -18,7 +18,7 @@ function Login() {
   const handleLogin = ()=>{
     signInWithEmailAndPassword(auth, email, password).then(() => {
       alert('successfully logged');
-      navigate('/header');
+      navigate('/header')
 
     }).catch((error) => {
       console.log(error.mesage);

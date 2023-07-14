@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -188,7 +193,7 @@ margin-top: 10px;
  color: black;
 }
 .booking-space{
-  height: 30px;
+  height: 40px;
 }
 .register-container{
   display: flex;
@@ -201,6 +206,7 @@ margin-top: 10px;
   bottom: 0;
   right: 0;
 }
+
 .booking-details span{ 
   margin: 10px;
   position: absolute;
@@ -295,4 +301,23 @@ margin-top: 10px;
 }
 .rating-stars svg{
   margin-right: 30px;  
+}
+.room-price{
+  position: absolute;
+  top: 220px ;
+  left: 660px;
+}
+.room-booking-time{
+  position: absolute;
+  top: 225px;
+  left: 750px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.fovourite{
+  position: absolute;
+  top: 60px;
+  left: 750px;
+  border-color: black;
+
 }
