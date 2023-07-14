@@ -7,6 +7,8 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import {getAuth} from 'firebase/auth';
+import {getFirestore} from 'firebase/firestore'
+
 const firebaseConfig = {
   apiKey: "AIzaSyAs3d1kjVCz7nr9_XfrsbXHBScBNLCQUnM",
   authDomain: "hotel-app-3b9df.firebaseapp.com",
@@ -22,4 +24,5 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const auth = getAuth(app);
-export {auth};
+const db =getFirestore(app)
+export {auth ,db};
