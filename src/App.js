@@ -8,6 +8,7 @@ import RoomReserv from './components.js/roomReserv';
 import Register from './components.js/register';
 import ForgortPassword from './components.js/forgortPassword';
 import Reserve from './components.js/reserve';
+import SuccessReserved from './components.js/successReserved';
 function App() {
   return (
     
@@ -22,6 +23,7 @@ function App() {
             <Route path='/register' element={<Register />} />
             <Route path='/forgortPassword' element={<ForgortPassword />} />
             <Route path='/roomReserv' element={<RoomReserv/>}/>
+            <Route path='/successReserved' element={<SuccessReserved/>}></Route>
             <Route path='/reserve' element={<Reserve/>} />           
           </Routes>
         </BrowserRouter>

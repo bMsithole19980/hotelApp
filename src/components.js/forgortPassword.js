@@ -21,7 +21,7 @@ function ForgortPassword() {
 
   return (
     <div className='register-container'>
-      <form className='form-group'>
+      <div className='form-group'>
         <div className='form-content'>
           <h2>Enter your email to reset password</h2>
           <input type='text' onChange={(event) => setEmail(event.target.value)} placeholder='Enter your email' /><br />
@@ -29,7 +29,7 @@ function ForgortPassword() {
           <Link to='/' style={{ color: 'blue' }}>Cancel</Link><br />
         
         </div>
-      </form>
+      </div>
     </div>
   )
 }

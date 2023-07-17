@@ -33,7 +33,7 @@ function Register() {
     <div style={{width:"100%" , position:"relative"}}>
       <img className='backHotel' alt='background' src={backgroundImage}></img>
       <div className='register-container'>
-        <form className='form-group'>
+        <div className='form-group'>
           <div className='form-content'>
             <h2>Create an account to<br></br> Exclusive Luxury Hotels<br></br> community</h2>
             <input type='text' onChange={(event) => setEmail(event.target.value)} placeholder='Enter your email'></input><br></br>
@@ -47,7 +47,7 @@ function Register() {
             <button onClick={register} >Sign Up</button><br></br>
             <h4>Already have an account? <Link onClick={handleSignUpClick} to='/' style={{ color: "lightskyblue" }}>Log in</Link></h4>
           </div>
-        </form>
+        </div>
 
 
 

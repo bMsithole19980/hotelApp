@@ -288,6 +288,9 @@ margin-top: 10px;
   margin-top: 40px;
 
 }
+.features h4{
+  padding: 4px;
+}
 .ratings{
   position: absolute;
   left: 360px;
@@ -319,5 +322,78 @@ margin-top: 10px;
   top: 60px;
   left: 750px;
   border-color: black;
+
+}
+.input-group{
+  position: absolute;
+  left: 780px;
+  top: 70px;
+}
+.btn-minus{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+.btn-plus{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  
+
+}
+.number{
+  border: none;
+  width: 40px ;
+  margin-left: 40px; 
+}
+.input-group1{
+  position: absolute;
+  left: 780px;
+  top: 110px;
+
+}
+.input-group2{
+  position: absolute;
+  left: 780px;
+  top: 150px;
+
+}
+.reserve-price{
+  position: absolute;
+  top: 220px ;
+  left: 760px;
+
+}
+.reserve-booking-time{
+  position: absolute;
+  top: 225px;
+  left: 850px;
+  font-weight: lighter;
+  font-size: 14px;
+
+}
+.page-layout{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 480px;
+  left: 50%;
+}
+.home{
+  position: relative;
+  top: 45px;
+  left: 10px;
+  background-color: chocolate;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 10px;
+  border-color: chocolate;
+  width: 180px;
+ 
 
 }
