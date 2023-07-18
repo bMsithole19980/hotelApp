@@ -159,18 +159,19 @@ margin-top: 10px;
 
 .booking-box{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 97%;
+  width: 90%;
   background-color: white;
   height: 300px;
   display: inline-block;
   position: relative;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: auto;
   border-radius: 25px;
   transition: 0.3s;
-  left: -60px;
+  left: -50px;
   right: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -286,10 +287,16 @@ margin-top: 10px;
   margin-right: 230px;
   font-size: 12px;
   margin-top: 40px;
+  margin-left: 10px;
 
 }
+
 .features h4{
   padding: 4px;
+  top: 10px;
+  margin-left: 100px;
+  
+  
 }
 .ratings{
   position: absolute;
@@ -329,13 +336,17 @@ margin-top: 10px;
   left: 780px;
   top: 70px;
 }
-.btn-minus{
+.btn-minus,
+.btn-minus2,
+.btn-minus3{
   border-radius: 50%;
   width: 30px;
   height: 30px;
   background-color: white;
 }
-.btn-plus{
+.btn-plus,
+.btn-plus2,
+.btn-plus3{
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -343,7 +354,10 @@ margin-top: 10px;
   
 
 }
-.number{
+
+.number,
+.number2,
+.number3{
   border: none;
   width: 40px ;
   margin-left: 40px; 
@@ -395,5 +409,16 @@ margin-top: 10px;
   border-color: chocolate;
   width: 180px;
  
+
+}
+.rate{
+  position: absolute;
+  top: 230px;
+  left: 330px;
+}
+.numberOfReviews{
+  position: absolute;
+  top: 240px;
+  left: 450px;
 
 }
