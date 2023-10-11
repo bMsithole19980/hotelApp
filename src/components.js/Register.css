@@ -1,0 +1,121 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.form-group {
+    background-color: #fff;
+    padding: 30px;
+    color: #000;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    border-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a box shadow */
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Change background color on hover */
+    transform: scale(1.05);
+    /* Scale the button slightly on hover */
+}
+
+.forgot-password-link {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-form {
+        width: 80%;
+        /* Reduce the width */
+        max-width: 300px;
+        /* Add a maximum width */
+        height: auto;
+    }
+
+    .form-group {
+        padding: 20px;
+        /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 20px;
+        /* Adjust the font size for h1 */
+    }
+
+    span {
+        font-size: 14px;
+        /* Adjust the font size for span */
+    }
+
+    button {
+        font-size: 14px;
+        /* Adjust the font size for the button */
+    }
+
+    .forgot-password-link,
+    .signup-link {
+        font-size: 12px;
+        /* Adjust the font size for the links and h3 */
+    }
+}

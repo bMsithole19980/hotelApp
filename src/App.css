@@ -12,9 +12,29 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .login-container {
+    /* Adjust styles for smaller screens here */
+    width: 100%;
+  }
+  
+  .form-group {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-group input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-group button {
+    width: 100%;
+  }
+
+  .password-container {
+    width: 100%;
   }
 }
 
@@ -42,16 +62,15 @@
   }
 }
 
-
-.form-group{
+/*Logo=in page style*/
+/* .form-group{
   background-color: black;
   padding: 30px;
   color: white;
   border-radius: 5px;
   width: 400px;
-  height: 500px;
   margin: 0 auto;
-  border-color: red;
+  text-align: center;
 
 
 }
@@ -59,8 +78,7 @@
   margin-bottom: 10px;
   padding: 5px;
   width: 300px;
-  height: 30px;
-  max-width: 400px;
+  max-width: 100%;
 }
 .form-group button{
   background-color: white;
@@ -81,6 +99,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  position: relative;
 }
 .form-content{
   display: flex;
@@ -96,8 +116,8 @@
   right: 5px;
   transform: translateY(-50%);
   cursor: pointer;
-}
-
+} */
+/* ijsd */
 .hotel-img{
   width: 100%;
   height: 100vh;
@@ -157,45 +177,9 @@ margin-top: 10px;
 
 }
 
-.booking-box{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 90%;
-  background-color: white;
-  height: 300px;
-  display: inline-block;
-  position: relative;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: auto;
-  border-radius: 25px;
-  transition: 0.3s;
-  left: -50px;
-  right: 20px;
-  margin-bottom: 20px;
 
-}
 
-.room-book{
-  display: flex;
-  align-items: center;
-}
-.booking-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-}
-.room-book h4{
- margin: 10px;
- position: absolute;
- top: 0;
- left: 0;
- font-weight: bold;
- color: black;
-}
-.booking-space{
-  height: 40px;
-}
+
 .register-container{
   display: flex;
   justify-content: center;
@@ -206,9 +190,9 @@ margin-top: 10px;
   left: 0;
   bottom: 0;
   right: 0;
-}
+} 
 
-.booking-details span{ 
+ .booking-details span{ 
   margin: 10px;
   position: absolute;
   top: 70px;
@@ -236,26 +220,7 @@ margin-top: 10px;
   cursor: pointer;
   margin-top: -4px;
 }
-.booking-pic{
-  width: 300px;
-  height: 260px;
-  left: 10px;
-  position: absolute;
-  top: 20px;
-  border-radius: 5px;
-}
-.book-head{
-  position: absolute;
-  top: -2px;
-  left: 340px;
-}
-.book-details h3{
-  font-weight: normal;
-  font-size: 16px;
-  position: absolute;
-  left: 345px;
-  top: 50px;
-}
+
 .btn-book{
   position: relative;
   top: 170px;
@@ -268,6 +233,7 @@ margin-top: 10px;
   margin-top: -40px;
   margin-left: 20px;
   border-color: chocolate;
+  width: 20%;
 }
 .btn-reserve{
   position: relative;
@@ -298,39 +264,7 @@ margin-top: 10px;
   
   
 }
-.ratings{
-  position: absolute;
-  left: 360px;
-  top: 240px;
-  justify-content: space-around;
-}
 
-.rating-stars{
-  display: flex;
-  
-}
-.rating-stars svg{
-  margin-right: 30px;  
-}
-.room-price{
-  position: absolute;
-  top: 220px ;
-  left: 660px;
-}
-.room-booking-time{
-  position: absolute;
-  top: 225px;
-  left: 750px;
-  font-weight: lighter;
-  font-size: 14px;
-}
-.fovourite{
-  position: absolute;
-  top: 60px;
-  left: 750px;
-  border-color: black;
-
-}
 .input-group{
   position: absolute;
   left: 780px;
@@ -411,14 +345,123 @@ margin-top: 10px;
  
 
 }
-.rate{
-  position: absolute;
-  top: 230px;
-  left: 330px;
-}
-.numberOfReviews{
-  position: absolute;
-  top: 240px;
-  left: 450px;
 
+@media (min-width: 768px) {
+  /* Adjust the font size and spacing for larger screens */
+  .text-name {
+    font-size: 80px;
+  }
+
+  .facilities p {
+    font-size: 18px;
+  }
+}
+
+/* CSS for medium-sized screens */
+@media (max-width: 768px) {
+  /* Adjust the layout for medium-sized screens */
+  .list ul {
+    flex-direction: column;
+  }
+
+  /* Adjust the font size and spacing for medium-sized screens */
+  .text-name {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  .facilities p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+/* CSS for small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  /* Adjust the layout for small screens */
+  .nav {
+    display: none; /* Hide the navigation on small screens */
+  }
+
+  /* Adjust the font size and spacing for small screens */
+  .text-name {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .facilities h1 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .facilities p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .list ul {
+    display: flex;
+  }
+
+  .list li {
+    margin-right: 20px;
+  }
+}
+
+/* CSS for small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .list ul {
+    flex-direction: column;
+  }
+
+  .list li {
+    margin-bottom: 10px;
+  }
+}
+/* Styles for the responsive navigation menu */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+/* Styles for small screens (hamburger menu) */
+.menu.active ul {
+  flex-direction: column;
+  display: block;
+}
+
+.menu.active li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: white;
+}
+
+/* Hamburger icon styles */
+.menu-toggle i {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
 }

@@ -1,0 +1,125 @@
+.booking-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+  background-color: white;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: auto;
+  border-radius: 25px;
+  transition: 0.3s;
+  left: -50px;
+  right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.room-book {
+  display: flex;
+  align-items: center;
+}
+.booking-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.room-book h4 {
+  margin: 10px;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  color: black;
+}
+.booking-space {
+  height: 40px;
+}
+.booking-pic {
+  width: 300px;
+  height: 260px;
+  left: 10px;
+  position: absolute;
+  top: 20px;
+  border-radius: 5px;
+}
+.book-head {
+  position: absolute;
+  top: -2px;
+  left: 340px;
+}
+.book-details h3 {
+  font-weight: normal;
+  font-size: 16px;
+  position: absolute;
+  left: 345px;
+  top: 50px;
+}
+.ratings {
+  position: absolute;
+  left: 360px;
+  top: 240px;
+  justify-content: space-around;
+}
+
+.rating-stars {
+  display: flex;
+}
+.rating-stars svg {
+  margin-right: 30px;
+}
+.room-price {
+  position: absolute;
+  top: 220px;
+  left: 570px;
+}
+.room-booking-time {
+  position: absolute;
+  top: 225px;
+  left: 620px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.favorite {
+  position: absolute;
+  top: 60px;
+  left: 660px;
+  border-color: black;
+}
+.rate {
+  position: absolute;
+  top: 230px;
+  left: 330px;
+}
+.numberOfReviews {
+  position: absolute;
+  top: 240px;
+  left: 450px;
+}
+@media (max-width: 600px) {
+  .booking-box {
+    max-width: 70%;
+    margin-left: 30%;
+    padding: 5px;
+  }
+  .booking-pic {
+    width: 90%;
+    height: 40%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .book-head {
+    margin: 0 auto; 
+    text-align: center;
+    position: relative; 
+    top: auto;
+    left: auto;
+  }
+  .book-details {
+    text-align: center; /* Center the book details text */
+  }
+  .numberReviews {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
