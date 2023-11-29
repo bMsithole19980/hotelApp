@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { db } from "../config/firebase";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {  collection, getDocs } from "firebase/firestore";
 import { useLocation } from "react-router-dom";
 
 function Reserve() {
@@ -33,13 +33,17 @@ function Reserve() {
     getRoomDetails();
   }, [getRoomDetails]);
 
-  const reserveRoom = async (roomData) => {
+  const reserveRoom = (roomData) => {
     try {
-       await addDoc(collection(db, "Reservation"), {
-        rooms: roomData,
+      navigate("/reserveDetails", {
+        state: {
+          bookedRoom: roomData,
+          roomName: roomData.RoomName,
+          roomDescription: roomData.RoomDescription,
+          roomPrice: roomData.RoomPrice,
+          
+        },
       });
-      alert("Successfully reserved a room");
-      navigate("/successReserved");
     } catch (error) {
       console.log(error.message);
     }
@@ -114,7 +118,7 @@ function Reserve() {
           <div className="input-group1">
             <input
               type="button"
-              value="- "
+              value="-"
               onClick={() => handDecrement(0)}
               className="btn-minus"
             ></input>

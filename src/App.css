@@ -191,8 +191,7 @@ margin-top: 10px;
   bottom: 0;
   right: 0;
 } 
-
- .booking-details span{ 
+.booking-details span{ 
   margin: 10px;
   position: absolute;
   top: 70px;
@@ -237,8 +236,8 @@ margin-top: 10px;
 }
 .btn-reserve{
   position: relative;
-  top: 245px;
-  left: 550px;
+  top: 260px;
+  left: 700px;
   background-color: rgb(233, 146, 69);
   color: white;
   border-radius: 5px;
@@ -247,6 +246,7 @@ margin-top: 10px;
   margin-top: -40px;
   margin-left: 20px;
   border-color: chocolate;
+  width: 20%;
 }
 .features{
   text-align: right;

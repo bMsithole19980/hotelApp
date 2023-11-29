@@ -1,0 +1,98 @@
+.container {
+    height: 100vh;
+    flex: 1;
+  }
+  
+  .search {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+  }
+  
+  .search input {
+    width: 90%;
+  }
+  
+  .button-add {
+    width: 60px;
+    margin-left: 10px; /* Adjusted margin for better spacing */
+    margin-top: 10px;
+  }
+  
+  .navigation {
+    background-color: royalblue;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .button {
+    background-color: rgb(190, 125, 2);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+  .content {
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(0, 24, 243);
+    width: 20%;
+    height: 90vh;
+    margin-bottom: 20px;
+  }
+  
+  .left-section h2 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px; /* Adjusted margin for better alignment */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .right-section {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Added margin for better spacing */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: royalblue;
+    color: white;
+  }
+  
+  /* Button styles */
+  .ActionButton {
+    display: flex;
+    gap: 10px;
+    width: 80px;
+    cursor: pointer;
+  }
+  button{
+    width: 80px;
+  }
+  
+  /* Additional styles as needed */
+  
