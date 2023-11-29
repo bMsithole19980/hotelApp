@@ -25,6 +25,9 @@
     padding: 10px;
     flex-direction: row;
     justify-content: space-between;
+    flex-direction: row; /* Change to column layout */
+    align-items: center; /* Center items horizontally */
+  
   }
   
   .button {
@@ -47,7 +50,8 @@
     background-color: rgb(0, 24, 243);
     width: 20%;
     height: 90vh;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
+    align-self: stretch;
   }
   
   .left-section h2 {
@@ -93,6 +97,20 @@
   button{
     width: 80px;
   }
+  .left-section h2 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 20px; /* Adjusted margin for better alignment */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Added transition for smooth effect */
+}
+
+.left-section h2:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the color and opacity as needed */
+}
+
   
   /* Additional styles as needed */
   
