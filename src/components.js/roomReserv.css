@@ -2,124 +2,146 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 90%;
   background-color: white;
-  height: 300px;
-  display: inline-block;
-  position: relative;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: auto;
-  border-radius: 25px;
-  transition: 0.3s;
-  left: -50px;
-  right: 20px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-.room-book {
+  height: auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  justify-content: center;
+  align-self: ce;
 }
-.booking-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+
+.booking-pic {
+  flex: 1;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  overflow: hidden;
+  max-height: none;
+  max-width: none;
 }
-.room-book h4 {
-  margin: 10px;
-  top: 0;
-  left: 0;
+
+.room-details {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-head {
   font-weight: bold;
   color: black;
 }
-.booking-space {
-  height: 40px;
-}
-.booking-pic {
-  width: 300px;
-  height: 260px;
-  left: 10px;
-  position: absolute;
-  top: 20px;
-  border-radius: 5px;
-}
-.book-head {
-  position: absolute;
-  top: -2px;
-  left: 340px;
-}
+
 .book-details h3 {
   font-weight: normal;
   font-size: 16px;
-  position: absolute;
-  left: 345px;
-  top: 50px;
-}
-.ratings {
-  position: absolute;
-  left: 360px;
-  top: 240px;
-  justify-content: space-around;
+  margin-top: 10px;
 }
 
-.rating-stars {
+.ratings {
   display: flex;
+  align-items: center;
+  margin-top: auto;
 }
+
 .rating-stars svg {
-  margin-right: 30px;
+  margin-right: 5px;
 }
+
 .room-price {
-  position: absolute;
-  top: 220px;
-  left: 570px;
+  margin-top: 10px;
+  left:30px;
 }
+
 .room-booking-time {
-  position: absolute;
-  top: 225px;
-  left: 620px;
   font-weight: lighter;
   font-size: 14px;
 }
+
 .favorite {
   position: absolute;
-  top: 60px;
-  left: 660px;
+  top: 20px;
+  right: 20px;
   border-color: black;
 }
-.rate {
-  position: absolute;
-  top: 230px;
-  left: 330px;
+
+.btns {
+  display: flex;
+  margin-top: auto;
 }
+
+.btn-book {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .numberOfReviews {
-  position: absolute;
-  top: 240px;
-  left: 450px;
+  margin-top: auto;
 }
-@media (max-width: 600px) {
-  .booking-box {
-    max-width: 70%;
-    margin-left: 30%;
-    padding: 5px;
+
+@media (max-width: 660px) {
+  .booking-pic{
+   width: 50px;
+   height: 50px;;
   }
-  .booking-pic {
-    width: 90%;
-    height: 40%;
-    justify-content: center;
-    margin-top: 10px;
+  .room-details {
+    border-radius: 0;
+    width: 100%;
   }
-  .book-head {
-    margin: 0 auto; 
-    text-align: center;
-    position: relative; 
-    top: auto;
-    left: auto;
+
+  .room-details {
+    padding: 10px;
   }
-  .book-details {
-    text-align: center; /* Center the book details text */
+
+  .btns {
+    flex-direction: column;
   }
-  .numberReviews {
-    text-align: center;
-    margin-top: 10px;
-  }
+}
+.active {
+  color: red;
+}
+.star-active {
+  color: gold; 
+}
+/* Add these styles to your existing stylesheet or create a new one */
+
+.AppleDew-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-container {
+  width: 50%;
+}
+
+.hotel-video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-details {
+  width: 50%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.text-details h1 {
+  color: #333;
+  font-size: 36px;
+}
+
+.text-details p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
 }

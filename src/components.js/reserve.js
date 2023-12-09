@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { db } from "../config/firebase";
 import {  collection, getDocs } from "firebase/firestore";
 import { useLocation } from "react-router-dom";
+import './reserve.css'
 
 function Reserve() {
   const [rooms, setRooms] = useState([]);

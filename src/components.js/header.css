@@ -1,0 +1,196 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none; /* Hide the hamburger icon by default */
+}
+.appledew{
+  width: 323px;
+height: 276px;
+flex-shrink: 0;
+margin-right: 100px;
+margin-top: 20px; /* Add margin to separate image from paragraphs */
+border-radius: 8px; 
+}
+.appledew-content {
+  /* Use flexbox to arrange paragraph and image in a row */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.areas{
+  margin-top: 100px;
+  margin-left: 40px;
+  width: 90%;
+height: 360px;
+flex-shrink: 0;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.names{
+  color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.events{
+  width: 90%;
+  margin-left: 40px;
+ height: 360px;
+flex-shrink: 0;
+}
+.descr{
+  width: 558px;
+height: 61px;
+flex-shrink: 0;
+}
+.appledew-content p {
+  color: var(--Gray-2, #4F4F4F);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+  margin-bottom: 10px; /* Add margin between paragraphs */
+  margin-left:  100px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  z-index: 1;
+  transition: display 0.3s ease-in-out;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hotel-img {
+  width: 100%;
+}
+
+.left-text {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 20px;
+  color: white;
+}
+
+.text-name {
+  text-align: center;
+  column-gap: 5px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the hamburger icon on phones */
+  }
+
+  .left-text {
+    padding: 10px;
+  }
+
+  .facilities h1 {
+    font-size: 20px;
+  }
+
+  .facilities p {
+    font-size: 14px;
+  }
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.facilities {
+  margin-top: 40px ;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.facilities h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.facilities p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.facilities-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Add more specific styling for each section as needed */

@@ -1,0 +1,51 @@
+/* Facilities.css */
+
+.facilities {
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .facilities h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .facilities p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .facilities-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .appledew {
+    width: 323px;
+    height: 276px;
+    flex-shrink: 0;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .appledew-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .appledew-content p {
+    color: var(--Gray-2, #4F4F4F);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  

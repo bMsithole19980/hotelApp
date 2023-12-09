@@ -14,7 +14,6 @@
 
 @media (max-width: 768px) {
   .login-container {
-    /* Adjust styles for smaller screens here */
     width: 100%;
   }
   
@@ -62,8 +61,7 @@
   }
 }
 
-/*Logo=in page style*/
-/* .form-group{
+.form-group{
   background-color: black;
   padding: 30px;
   color: white;
@@ -116,8 +114,8 @@
   right: 5px;
   transform: translateY(-50%);
   cursor: pointer;
-} */
-/* ijsd */
+}
+
 .hotel-img{
   width: 100%;
   height: 100vh;
@@ -347,7 +345,6 @@ margin-top: 10px;
 }
 
 @media (min-width: 768px) {
-  /* Adjust the font size and spacing for larger screens */
   .text-name {
     font-size: 80px;
   }
@@ -357,14 +354,11 @@ margin-top: 10px;
   }
 }
 
-/* CSS for medium-sized screens */
 @media (max-width: 768px) {
-  /* Adjust the layout for medium-sized screens */
   .list ul {
     flex-direction: column;
   }
 
-  /* Adjust the font size and spacing for medium-sized screens */
   .text-name {
     font-size: 60px;
     margin-top: 20px;
@@ -376,14 +370,11 @@ margin-top: 10px;
   }
 }
 
-/* CSS for small screens (e.g., mobile devices) */
 @media (max-width: 480px) {
-  /* Adjust the layout for small screens */
-  .nav {
-    display: none; /* Hide the navigation on small screens */
-  }
 
-  /* Adjust the font size and spacing for small screens */
+  .nav {
+    display: none; 
+  }
   .text-name {
     font-size: 40px;
     margin-top: 10px;
@@ -409,7 +400,6 @@ margin-top: 10px;
   }
 }
 
-/* CSS for small screens (e.g., mobile devices) */
 @media (max-width: 480px) {
   .list ul {
     flex-direction: column;
@@ -419,7 +409,6 @@ margin-top: 10px;
     margin-bottom: 10px;
   }
 }
-/* Styles for the responsive navigation menu */
 nav {
   background-color: #333;
   display: flex;
@@ -442,8 +431,6 @@ nav {
 .menu li {
   margin-right: 20px;
 }
-
-/* Styles for small screens (hamburger menu) */
 .menu.active ul {
   flex-direction: column;
   display: block;
@@ -455,7 +442,6 @@ nav {
   color: white;
 }
 
-/* Hamburger icon styles */
 .menu-toggle i {
   cursor: pointer;
 }

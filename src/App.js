@@ -10,6 +10,7 @@ import ForgortPassword from './components.js/forgortPassword';
 import Reserve from './components.js/reserve';
 import SuccessReserved from './components.js/successReserved';
 import ReservationDetails from './components.js/ReservationDetails'
+import Facilities from './components.js/facilities';
 function App() {
   return (
     
@@ -27,6 +28,7 @@ function App() {
             <Route path='/successReserved' element={<SuccessReserved/>}></Route>
             <Route path='/reserve' element={<Reserve/>} /> 
             <Route path='/reserveDetails' element={<ReservationDetails/>} /> 
+            <Route path='/facilities' element={<Facilities/>} /> 
 
           </Routes>
         </BrowserRouter>
