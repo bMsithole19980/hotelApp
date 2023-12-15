@@ -5,7 +5,7 @@
   }
   
   nav {
-    background-color: #222;
+    background-color: #fff;
     padding: 20px;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -14,7 +14,7 @@
   }
   
   .logo {
-    color: #fff;
+    color: #000;
     font-size: 24px;
     font-weight: bold;
   }
@@ -46,7 +46,7 @@
   
   .nav-list a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: 500;
     padding: 10px 15px;

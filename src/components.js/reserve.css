@@ -8,13 +8,11 @@
     display: inline-block;
     position: relative;
     align-items: center;
-    margin-left: 5%;
-    margin-right: auto;
+    margin-right: 30px;
+    /* margin-top:  50px; */
     border-radius: 25px;
     transition: 0.3s;
-    left: -50px;
-    right: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
     justify-content: center;
   }
   
@@ -71,7 +69,9 @@
     top: 240px;
     justify-content: space-around;
   }
-  
+  .btn-reserve{
+    margin-left: 50px;
+  }
   .rating-stars {
     display: flex;
   }

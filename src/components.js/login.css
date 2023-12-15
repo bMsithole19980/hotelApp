@@ -1,106 +1,89 @@
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .login-form {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    width: 300px;
-  }
+  display: flex;
+  height: 80vh; /* Adjust the height to match the side-image */
+  margin-top: 50px;
+}
+
+.side-image {
+  width: 50%;
+  height: 100%; /* Use 100% height to match the login-container */
+  border-radius: 8px 0 0 8px;
+}
+
+.form-group {
+  background-color: #fff;
+  /* padding: 30px; */
+  color: #000;
+  /* border-radius: 0 8px 8px 0; */
+  width: 50%;
+  margin-left: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content vertically */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+input {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch feel */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 15px; /* Increased margin for better separation */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.reset-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff; /* Use the same color as the button for better consistency */
+}
+
+.signup-link {
+  margin-top: 15px; /* Increased margin for better separation */
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .form-group {
-    background-color: #fff;
-    padding: 30px;
-    color: #000;
-    border-radius: 5px;
-    width: 400px;
-    height: 500px;
-    margin: 0 auto;
-    border-color: red;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    width: 80%;
+    max-width: none; /* Remove maximum width for better responsiveness */
   }
-  
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .password-container {
-    position: relative;
-  }
-  
-  .password-toggle {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  button:hover {
-    background-color: #0056b3; /* Change background color on hover */
-    transform: scale(1.05); /* Scale the button slightly on hover */
-  }
-  
-   .reset-link{
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .signup-link {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .login-form {
-        width: 80%; /* Reduce the width */
-        max-width: 300px; /* Add a maximum width */
-        height: auto;
-    }
-    .form-group {
-        padding: 20px; /* Reduce padding for smaller screens */
-      }
-      h1 {
-        font-size: 20px; /* Adjust the font size for h1 */
-      }
-    
-      span {
-        font-size: 14px; /* Adjust the font size for span */
-      }
-    
-      button {
-        font-size: 14px; /* Adjust the font size for the button */
-      }
-    
-      .forgot-password-link, .signup-link {
-        font-size: 12px; /* Adjust the font size for the links and h3 */
-      }
-  }
-  
+}

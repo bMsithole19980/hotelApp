@@ -7,6 +7,7 @@ import { db } from "../config/firebase";
 import {  collection, getDocs } from "firebase/firestore";
 import { useLocation } from "react-router-dom";
 import './reserve.css'
+import Navigation from "./navigation";
 
 function Reserve() {
   const [rooms, setRooms] = useState([]);
@@ -66,13 +67,14 @@ function Reserve() {
 
   return (
     <div>
+      <Navigation/>
       {bookedRoom ? (
         <div className="booking-box" key={bookedRoom.id}>
           <h4 className="book-head">{bookedRoom.RoomName}</h4>
-          <div className="book-details">
+          <div className="reserve-details">
             <h3>{bookedRoom.RoomDescription}</h3>
           </div>
-          <div className="btns">
+          <div className="btns-reserve">
             <button
               className=" btn-reserve"
               onClick={() => reserveRoom(bookedRoom)}
@@ -85,7 +87,7 @@ function Reserve() {
               </Link>
             </button>
           </div>
-          <div className="features">
+          {/* <div className="features">
             <h4 className="children">Children</h4>
             <br></br>
             <h4 className="adult">Adults</h4>
@@ -115,8 +117,8 @@ function Reserve() {
               onClick={() => handIncrement(0)}
               className="btn-plus"
             ></input>
-          </div>
-          <div className="input-group1">
+          </div> */}
+          {/* <div className="input-group1">
             <input
               type="button"
               value="-"
@@ -161,7 +163,7 @@ function Reserve() {
               onClick={() => handIncrement(0)}
               className="btn-plus"
             ></input>
-          </div>
+          </div> */}
           <div className="reserve-price">
             <h3>R{bookedRoom.RoomPrice}</h3>
           </div>

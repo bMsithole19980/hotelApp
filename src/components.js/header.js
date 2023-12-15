@@ -54,11 +54,11 @@ function Header() {
             </span>
             <br />
             <span style={{ fontWeight: "bolder", fontSize: "80px" }}>
-              LUXURY
+              AppleDew
             </span>
             <br />
             <span style={{ fontWeight: "bold", fontSize: "30px" }}>
-              HOTELS
+              HOTEL
             </span>
             <br />
             <span style={{ fontWeight: "lighter", fontSize: "25px" }}>

@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 25px;
+  margin-right: 30px;
   overflow: hidden;
   justify-content: center;
   align-self: ce;
@@ -107,41 +108,4 @@
 }
 .star-active {
   color: gold; 
-}
-/* Add these styles to your existing stylesheet or create a new one */
-
-.AppleDew-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.video-container {
-  width: 50%;
-}
-
-.hotel-video {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.text-details {
-  width: 50%;
-  padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  margin-left: 20px;
-}
-
-.text-details h1 {
-  color: #333;
-  font-size: 36px;
-}
-
-.text-details p {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.5;
 }

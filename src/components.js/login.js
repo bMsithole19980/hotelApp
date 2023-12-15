@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth, db } from '../config/firebase';
 import { collection, getDocs, where, query } from 'firebase/firestore'; // Import Firestore functions
-
+import hotel from '../images/lognHotel.jpg';
 import './login.css';
 
 function Login() {
@@ -20,21 +20,21 @@ function Login() {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-  
+
       // Retrieve user role from Firestore
       const q = query(collection(db, 'Users'), where('uid', '==', user.uid)); // Update 'userId' to 'uid'
       const querySnapshot = await getDocs(q);
-  
+
       if (!querySnapshot.empty) {
         const userData = querySnapshot.docs[0].data();
-  
+
         // Check the user's role and navigate accordingly
         if (userData.role === 'admin') {
           navigate('/adminScreen');
         } else {
           navigate('/header');
         }
-  
+
         alert('Successfully logged in');
       } else {
         console.error('User data not found');
@@ -43,11 +43,11 @@ function Login() {
       console.error(error.message);
     }
   };
-  
 
   return (
-    <div style={{ width: '100%', position: 'relative' }}>
+    <div>
       <div className='login-container'>
+        <img src={hotel} alt='hotel' className='side-image' />
         <div className='form-group'>
           <div className='form-content'>
             <h2 style={{ textAlign: 'center' }}>
